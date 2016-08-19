@@ -10,9 +10,13 @@ CSS3 有新的 `transform` 属性，下面介绍一下这个属性。
 3.scale(a)　缩放　a比例
 
 transition-property 规定设置过渡效果的 CSS 属性的名称。
+
 transition-duration 规定完成过渡效果需要多少秒或毫秒 
+
 transition-timing-function 规定速度效果的速度曲线 linear 匀速 ease 慢快慢 
+
 transition-delay 定义过渡效果何时开始
+
 z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
 
 
