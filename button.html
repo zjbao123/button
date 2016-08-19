@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	html,body,a,span{
+		padding: 0px;
+		margin:0px;
+		text-decoration: none;
+		font-family: "微软雅黑";
+	}
+	.btn1{
+		display: block;
+		width: 300px;
+		height: 100px;
+		margin: 30px auto;
+		border: 1px solid #2FA0EC;
+		color: #2FA0EC;
+		line-height: 100px;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		transition: color 1s ease-in;
+	}
+	.btn1 span{
+		display: block;
+		width: 0px;
+		height: 0px;
+		transition: all 1s ease-in;
+		border-radius:50%;
+		background: #2FA0EC;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		transform: translate(-50%,50%);
+		z-index: -1;
+	}
+	.btn1:hover{
+		color: white;
+	}
+	.btn1:hover span{
+	width: 800px;
+	height: 800px;
+	}
+	.btn2{
+		display: block;
+		width: 300px;
+		height: 100px;
+		margin: 30px auto;
+		border: 1px solid #2F8AA6;
+		color: #2F8AA6;
+		line-height: 100px;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		transition: color 1s ease-in;
+	}
+	.btn2 span{
+		display: block;
+		width: 0px;
+		height: 0px;
+		transition: border-width 1s ease-in;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		border-style: solid;
+		border-width:0px 0px 0px 0px;
+		border-color:#2F8AA6 white white white;
+		z-index: -1;
+
+	}
+	.btn2:hover{
+		color: white;
+	}
+	.btn2:hover span{
+	border-width:600px 600px 0px 0px;
+	}
+	.btn3{
+		display: block;
+		width: 300px;
+		height: 100px;
+		margin: 30px auto;
+		border: 1px solid #F41B1B;
+		color: #F41B1B;
+		line-height: 100px;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		transition: color 1s ease-in;
+	}
+	.btn3 #span1{
+		display: block;
+		width: 0px;
+		height: 0px;		
+		transition: all 1s ease-in;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background:#F41B1B;
+		transform:translate(-50%,-50%) rotate(45deg);
+		z-index: -1;
+
+	}
+	.btn3 #span2{
+		display: block;
+		width: 0px;
+		height: 0px;
+		transition: all 1s ease-in;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		background:#F41B1B;
+		transform:translate(50%,50%) rotate(45deg);
+		z-index: -1;
+
+	}
+	.btn3:hover{
+		color: white;
+	}
+	.btn3:hover #span1{
+	width: 400px;
+	height: 400px;
+	}
+	.btn3:hover #span2{
+	width: 400px;
+	height: 400px;
+	}
+	</style>
+</head>
+<body>
+	<a class="btn1" href="">
+	圆角动画
+	<span></span>
+	</a>
+	<a class="btn2" href="">
+	斜边动画
+	<span></span>
+	</a>
+	<a class="btn3" href="">
+	双斜边动画
+	<span id='span1'></span>
+	<span id='span2'></span>
+	</a>
+</body>
+</html>
